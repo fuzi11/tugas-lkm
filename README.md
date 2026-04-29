@@ -1,16 +1,31 @@
-# React + Vite
+cara install web nya
+yang dibutuhkan
+1. node js (install aja di internet)
+2. git (ini juga ada di internet)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+set up aplikasi
+1. git clone https://github.com/fuzi11/tugas-lkm.git (ini cuman sekali guyssss)
+2. cd tugas-lkm
+3. npm install
+4. buka http://localhost:5173/ di browser
 
-Currently, two official plugins are available:
+sekarang cara push atau pull github 
+push = masukin program yang udah di coding ke repository
+pull = masukin program terbaru dari repository github ke file yang di coding
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+pertama-tama
+masuk dlu ke direktori di cmd atau terminal dengan perintah --> cd tugas lkm
+contoh : dari awalnya misal 
+C:\Users\ASUS> harus jadi C:\Users\ASUS\tugas-lkm>
+nah itu tuh pake perintah cd tugas-lkm
+ terus untuk konfigurasi awal itu
+ git config --global user.email emailkalianyangdipakebuatdaftargithub
+ git config --global user.name usernamegithubkalian
 
-## React Compiler
+sekarang untuk cara pull (di terminal atau cmd)
+git pull origin main
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+sekarang untuk push (di terminal atau cmd)
+git add .
+git commit -m "nama commit"
+git push -u origin main

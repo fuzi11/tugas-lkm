@@ -1,4 +1,5 @@
 cara install web nya
+
 yang dibutuhkan
 1. node js (install aja di internet)
 2. git (ini juga ada di internet)

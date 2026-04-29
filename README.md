@@ -1,16 +1,40 @@
-# React + Vite
+cara install web nya
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+yang dibutuhkan
+1. node js (install aja di internet)
+2. git (ini juga ada di internet)
 
-Currently, two official plugins are available:
+set up aplikasi
+1. git clone https://github.com/fuzi11/tugas-lkm.git (ini cuman sekali guyssss)
+2. cd tugas-lkm
+3. npm install
+4. npm run dev
+5. buka http://localhost:5173/ di browser
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+sekarang cara push atau pull github 
 
-## React Compiler
+push = masukin program yang udah di coding ke repository
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+pull = masukin program terbaru dari repository github ke file yang di coding
 
-## Expanding the ESLint configuration
+pertama-tama
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+masuk dlu ke direktori di cmd atau terminal dengan perintah --> cd tugas lkm
+
+contoh : dari awalnya misal 
+
+C:\Users\ASUS> harus jadi C:\Users\ASUS\tugas-lkm>
+
+nah itu tuh pake perintah cd tugas-lkm
+
+ terus untuk konfigurasi awal itu
+ 1. git config --global user.email emailkalianyangdipakebuatdaftargithub
+ 2. git config --global user.name usernamegithubkalian
+
+sekarang untuk cara pull (di terminal atau cmd)
+1. git pull origin main
+
+sekarang untuk push (di terminal atau cmd)
+1. git add .
+2. git commit -m "nama commit"
+3. git push -u origin main

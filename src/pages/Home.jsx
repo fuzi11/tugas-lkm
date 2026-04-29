@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-const Home = () => {
-  return <div>Home</div>;
-};
-
-export default Home;
-=======
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -23,14 +14,14 @@ function Home() {
         d
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
-        <Link 
-          to="/anggota" 
+        <Link
+          to="/anggota"
           className="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
         >
           Lssss
         </Link>
-        <Link 
-          to="/swot" 
+        <Link
+          to="/swot"
           className="px-8 py-3 bg-white text-blue-600 font-semibold border border-blue-600 rounded-lg shadow-md hover:bg-blue-50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
         >
           Apppp
@@ -41,4 +32,3 @@ function Home() {
 }
 
 export default Home;
->>>>>>> c5486d4f8b2eed119b697a566ddd8fafa18d7861

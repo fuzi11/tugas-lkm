@@ -10,22 +10,29 @@ set up aplikasi
 4. buka http://localhost:5173/ di browser
 
 sekarang cara push atau pull github 
+
 push = masukin program yang udah di coding ke repository
+
 pull = masukin program terbaru dari repository github ke file yang di coding
 
 pertama-tama
+
 masuk dlu ke direktori di cmd atau terminal dengan perintah --> cd tugas lkm
+
 contoh : dari awalnya misal 
+
 C:\Users\ASUS> harus jadi C:\Users\ASUS\tugas-lkm>
+
 nah itu tuh pake perintah cd tugas-lkm
+
  terus untuk konfigurasi awal itu
- git config --global user.email emailkalianyangdipakebuatdaftargithub
- git config --global user.name usernamegithubkalian
+ 1. git config --global user.email emailkalianyangdipakebuatdaftargithub
+ 2. git config --global user.name usernamegithubkalian
 
 sekarang untuk cara pull (di terminal atau cmd)
-git pull origin main
+1. git pull origin main
 
 sekarang untuk push (di terminal atau cmd)
-git add .
-git commit -m "nama commit"
-git push -u origin main
+1. git add .
+2. git commit -m "nama commit"
+3. git push -u origin main

@@ -8,7 +8,8 @@ set up aplikasi
 1. git clone https://github.com/fuzi11/tugas-lkm.git (ini cuman sekali guyssss)
 2. cd tugas-lkm
 3. npm install
-4. buka http://localhost:5173/ di browser
+4. npm run dev
+5. buka http://localhost:5173/ di browser
 
 sekarang cara push atau pull github 
 

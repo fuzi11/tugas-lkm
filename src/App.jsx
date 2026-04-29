@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Members from "./pages/Members";
 import Materials from "./pages/Materials";
 import Swot from "./pages/Swot";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/swot" element={<Swot />} />
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

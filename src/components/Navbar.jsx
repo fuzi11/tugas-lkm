@@ -56,7 +56,7 @@ const Navbar = () => {
               Materi
             </a>
             <a href="/swot" className="py-4 hover:text-var(--hover)">
-              Swor
+              Swot
             </a>
           </div>
         )}

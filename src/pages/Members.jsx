@@ -2,25 +2,81 @@ function Members() {
   const members = [
     {
       id: 1,
-      name: "tes",
+      name: "Muhammad Nibras Zahran Irawan",
       role: "tes",
       desc: "tes",
       img: "",
     },
     {
       id: 2,
-      name: "tes",
+      name: "Nazwa Nurul Aulia",
       role: "tes",
       desc: "tes",
       img: "",
     },
     {
       id: 3,
-      name: "tes",
+      name: "Fariz Alwasi",
       role: "tes",
       desc: "tes.",
       img: "",
     },
+    {
+      id: 4,
+      name: "Desvitasari",
+      role: "tes",
+      desc: "tes",
+      img: "",
+    },
+    {
+      id: 5,
+      name: "Muhammad Ikhsan Al Rizal",
+      role: "tes",
+      desc: "tes",
+      img: "",
+    },
+    {
+      id: 6,
+      name: "Taufik Sabillah",
+      role: "tes",
+      desc: "tes",
+      img: "",
+    },
+    {
+      id: 7,
+      name: "Ilham Syarif Hidayat",
+      role: "tes",
+      desc: "tes",
+      img: "",
+    },
+    {
+      id: 8,
+      name: "Viola Diva Ananda",
+      role: "tes",
+      desc: "tes",
+      img: "",
+    },
+    {
+      id: 9,
+      name: "Fauzi Firmansyah",
+      role: "tes",
+      desc: "tes",
+      img: "",
+    },
+    {
+      id: 10,
+      name: "Danar Yusuf Gantika Putra",
+      role: "tes",
+      desc: "tes",
+      img: "",
+    },
+    {
+      id: 11,
+      name: "Mochammad Faza Fauzan Adhima",
+      role: "tes",
+      desc: "tes",
+      img: "",
+    }
   ];
 
   return (

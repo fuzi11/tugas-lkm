@@ -75,7 +75,7 @@ function Members() {
       name: "Mochammad Faza Fauzan Adhima",
       role: "tes",
       desc: "tes",
-      img: "",
+      img: "FOTO FAZA.jpg",
     }
   ];
 

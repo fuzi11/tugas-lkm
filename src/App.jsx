@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Members from "./pages/Members";
 import Materials from "./pages/Materials";
+import MaterialDetail from "./pages/MaterialDetail";
 import Swot from "./pages/Swot";
 import Footer from "./components/Footer";
 
@@ -22,6 +23,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/anggota" element={<Members />} />
             <Route path="/materi" element={<Materials />} />
+            <Route path="/materi/:id" element={<MaterialDetail />} />
             <Route path="/swot" element={<Swot />} />
           </Routes>
         </main>

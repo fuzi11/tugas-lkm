@@ -5,81 +5,84 @@ function Members() {
     {
       id: 1,
       name: "Muhammad Nibras Zahran Irawan",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000001",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 2,
       name: "Nazwa Nurul Aulia",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000002",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 3,
       name: "Fariz Alwasi",
-      role: "tes",
-      desc: "tes.",
+      npm: "0000000003",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 4,
       name: "Desvitasari",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000004",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 5,
       name: "Muhammad Ikhsan Al Rizal",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000005",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 6,
       name: "Taufik Sabillah",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000006",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 7,
       name: "Ilham Syarif Hidayat",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000007",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 8,
       name: "Viola Diva Ananda",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000008",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 9,
       name: "Fauzi Firmansyah",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000009",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 10,
       name: "Danar Yusuf Gantika Putra",
-      role: "tes",
-      desc: "tes",
+      npm: "0000000010",
+      linkedin: "https://www.linkedin.com/",
       img: "",
     },
     {
       id: 11,
       name: "Mochammad Faza Fauzan Adhima",
-      role: "tes",
-      desc: "tes",
+      npm: "257006111180",
+      linkedin: "https://www.linkedin.com/in/mochammad-faza-fauzan-adhima-95b3b7381",
       img: faza,
     }
   ];
+  
+  const getLinkedInUrl = (url) =>
+    url.startsWith("http") ? url : `https://${url}`;
 
   const getInitials = (name) =>
     name
@@ -127,11 +130,16 @@ function Members() {
                 {member.name}
               </h3>
               <p className="text-cyan-200 font-semibold mt-1 mb-4">
-                {member.role}
+                NPM: {member.npm}
               </p>
-              <p className="text-slate-300 text-sm leading-relaxed">
-                {member.desc}
-              </p>
+              <a
+                href={getLinkedInUrl(member.linkedin)}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex items-center justify-center rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-200 hover:text-slate-950"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         ))}

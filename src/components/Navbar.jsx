@@ -6,7 +6,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="bg-white text-black shadow-md sticky top-0 z-50">
-      <div className="mx-auto px-4 py-3">
+      <div className="mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <h1>Kelompok 18</h1>
           <div className="hidden md:inline space-x-6">

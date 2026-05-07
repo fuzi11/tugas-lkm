@@ -58,14 +58,14 @@ function Materials() {
 
   return (
     <div className="max-w-4xl mx-auto p-4">
-      <h2 className="text-3xl font-extrabold text-center text-slate-800 mb-10">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-center text-slate-800 mb-10">
         📚 Rangkuman Materi LKM
       </h2>
       <div className="space-y-6">
         {materials.map((mat) => (
           <div
             key={mat.id}
-            className="bg-white p-6 md:p-8 rounded-xl shadow-sm border-l-4 border-blue-500 hover:shadow-lg transition-all duration-300 group hover:-translate-y-1"
+            className="bg-white p-6 md:p-8 rounded-xl shadow-sm border-l-4 border-blue-500 hover:shadow-lg transition-all duration-500 group hover:-translate-y-1"
           >
             <button
               onClick={() => handleOpen(mat.number)}

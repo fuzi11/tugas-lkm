@@ -41,12 +41,10 @@ function Home() {
 
             <h1 className="mb-6 text-4xl font-extrabold leading-tight md:text-6xl">
               Kelompok 18
-              <span className="block text-cyan-200">Siap Berkarya</span>
+              <span className="block text-cyan-200"></span>
             </h1>
 
             <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-slate-200 md:mx-0 md:text-lg">
-              Tempat kumpulan profil anggota, materi, dan analisis kelompok
-              dalam satu halaman yang rapi, ringan, dan mudah dijelajahi.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">

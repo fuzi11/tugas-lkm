@@ -76,11 +76,9 @@ function Swot() {
         {swotData.map((item, index) => (
           <div
             key={index}
-            className={`${item.color} ${item.border} border-t-4 rounded-2xl p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8`}
+            className={`rounded-2xl border border-white/10 border-t-4 ${item.border} bg-slate-950/70 p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl md:p-8`}
           >
-            <h3
-              className={`text-2xl font-bold ${item.text} mb-5 flex items-center gap-3`}
-            >
+            <h3 className="text-2xl font-bold text-white mb-5 flex items-center gap-3">
               <span
                 className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${item.accent} text-lg font-extrabold text-white shadow-md`}
               >
@@ -93,7 +91,7 @@ function Swot() {
                 <button
                   key={point}
                   type="button"
-                  className="w-full rounded-xl border border-slate-200 bg-white/75 px-4 py-3 text-left font-semibold leading-relaxed text-slate-700 shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-300 hover:bg-white hover:text-blue-700 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full rounded-xl border border-white/10 bg-slate-900/80 px-4 py-3 text-left font-semibold leading-relaxed text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:border-cyan-300 hover:bg-slate-900/95 hover:text-white hover:shadow-md focus:outline-none focus:ring-2 focus:ring-cyan-400"
                 >
                   <span className="mr-2 text-slate-400">
                     {String(i + 1).padStart(2, "0")}

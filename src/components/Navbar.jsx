@@ -10,7 +10,7 @@ const Navbar = () => {
       <div className="mx-auto p-4">
         <div className="flex justify-between items-center">
           <div className="flex justify-center gap-1">
-            <img src={logo} alt="" className="h-10 w-10" />
+            <img src={logo} alt="" className="h-10 w-8" />
             <div className="flex flex-col justify-center">
               <h1 className="text-2xl leading-3 mt-2">LKM</h1>
               <span className="text-sm">Informatika</span>

@@ -3,16 +3,10 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-[70vh] text-center animate-fade-in">
-      <div className="inline-block px-4 py-1 mb-6 text-sm font-semibold text-blue-700 bg-blue-100 rounded-full">
-        Td
-      </div>
       <h1 className="text-4xl md:text-6xl font-extrabold text-slate-800 mb-6 drop-shadow-sm leading-tight">
         Kelompok 18 <br />
         <span className="text-blue-600">LKM Informatika 2026</span>
       </h1>
-      <p className="text-lg text-slate-600 mb-10 max-w-2xl leading-relaxed">
-        d
-      </p>
       <div className="flex flex-col sm:flex-row gap-4">
         <Link
           to="/anggota"

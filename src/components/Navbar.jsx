@@ -1,14 +1,21 @@
 import { NavLink } from "react-router-dom";
 import React, { useState } from "react";
 import "../index.css";
+import logo from "../assets/Logo LKM.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <nav className="bg-white text-black shadow-md sticky top-0 z-50">
-      <div className="mx-auto px-4 py-4">
+      <div className="mx-auto p-4">
         <div className="flex justify-between items-center">
-          <h1>Kelompok 18</h1>
+          <div className="flex justify-center gap-1">
+            <img src={logo} alt="" className="h-10 w-10" />
+            <div className="flex flex-col justify-center">
+              <h1 className="text-2xl leading-3 mt-2">LKM</h1>
+              <span className="text-sm">Informatika</span>
+            </div>
+          </div>
           <div className="hidden md:inline space-x-6">
             <a
               href="/"
@@ -27,12 +34,6 @@ const Navbar = () => {
               className="hover:text-(--text-primary) transition duration-300"
             >
               Materi
-            </a>
-            <a
-              href="/swot"
-              className="hover:text-(--text-primary) transition duration-300"
-            >
-              Swot
             </a>
           </div>
           <button
@@ -54,9 +55,6 @@ const Navbar = () => {
             </a>
             <a href="/materi" className="py-4 hover:text-hover">
               Materi
-            </a>
-            <a href="/swot" className="py-4 hover:text-var(--hover)">
-              Swot
             </a>
           </div>
         )}

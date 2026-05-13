@@ -21,10 +21,10 @@ function Home() {
           Anggota
         </Link>
         <Link
-          to="/swot"
+          to="/materi"
           className="px-8 py-3 bg-white text-blue-600 font-semibold border border-blue-600 rounded-lg shadow-md hover:bg-blue-50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
         >
-          Analisis SWOT
+          Materi LKM
         </Link>
       </div>
     </div>

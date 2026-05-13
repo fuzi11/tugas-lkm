@@ -16,7 +16,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/anggota" element={<Members />} />
             <Route path="/materi" element={<Materials />} />
-            <Route path="/swot" element={<Swot />} />
           </Routes>
         </main>
         <Footer />

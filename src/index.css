@@ -3,3 +3,44 @@
 @theme {
   --text-primary: #3b82f6;
 }
+
+@layer components {
+  .angled-panel {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 0.5rem;
+    background:
+      linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(8, 47, 73, 0.74)),
+      radial-gradient(circle at 20% 0%, rgba(34, 211, 238, 0.22), transparent 34%);
+    box-shadow: 0 24px 48px rgba(2, 6, 23, 0.42);
+  }
+
+  .angled-panel::before {
+    content: "";
+    position: absolute;
+    left: 1.1rem;
+    top: 0;
+    z-index: 1;
+    height: 4.5rem;
+    width: 0.42rem;
+    transform: skewX(-16deg);
+    background: linear-gradient(180deg, #22d3ee, #2563eb);
+    box-shadow: 0 0 24px rgba(34, 211, 238, 0.45);
+  }
+
+  .angled-frame {
+    clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+  }
+
+  .angled-nameplate {
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+    background:
+      linear-gradient(90deg, rgba(37, 99, 235, 0.95), rgba(34, 211, 238, 0.72)),
+      linear-gradient(135deg, rgba(15, 23, 42, 0.96), rgba(15, 23, 42, 0.7));
+  }
+
+  .angled-soft {
+    clip-path: polygon(4% 0, 100% 0, 96% 100%, 0 100%);
+  }
+}

@@ -35,9 +35,9 @@ function MaterialDetail() {
       </Link>
 
       <article className="overflow-hidden rounded-2xl border border-white/10 bg-slate-950/75 text-white shadow-xl shadow-blue-950/30 backdrop-blur">
-        <div className={`h-2 bg-gradient-to-r ${material.color}`} />
+        <div className="h-2 bg-gradient-to-r from-blue-600 via-cyan-400 to-blue-500" />
         <div className="grid gap-6 p-6 md:grid-cols-[6rem_1fr] md:p-8">
-          <div className="flex h-20 w-20 items-center justify-center rounded-xl border border-cyan-200/30 bg-slate-900 text-3xl font-extrabold text-cyan-200 shadow-lg shadow-cyan-950/30">
+          <div className="flex h-20 w-20 items-center justify-center rounded-xl border border-cyan-200/30 bg-blue-500/15 text-3xl font-extrabold text-cyan-200 shadow-lg shadow-cyan-950/30">
             {String(material.id).padStart(2, "0")}
           </div>
 
@@ -54,7 +54,7 @@ function MaterialDetail() {
           </div>
         </div>
 
-        <section className="border-t border-white/10 bg-slate-900/60 p-6 md:p-8">
+        <section className="border-t border-blue-300/15 bg-blue-950/35 p-6 md:p-8">
           <h3 className="text-xl font-extrabold text-white">
             Deskripsi Materi
           </h3>

@@ -16,6 +16,11 @@
     box-shadow: 0 24px 48px rgba(2, 6, 23, 0.42);
   }
 
+  .member-parallelogram-panel {
+    clip-path: polygon(8% 0, 100% 0, 92% 100%, 0 100%);
+    padding-inline: 0.9rem;
+  }
+
   .angled-panel::before {
     content: "";
     position: absolute;

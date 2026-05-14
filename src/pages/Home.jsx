@@ -15,14 +15,14 @@ function Home() {
       desc: "Lihat rangkuman materi yang sudah disusun bersama.",
       to: "/materi",
       icon: "📚",
-      accent: "from-emerald-500 to-teal-500",
+      accent: "from-blue-500 to-cyan-500",
     },
     {
       title: "Analisis SWOT",
       desc: "Pahami kekuatan, peluang, tantangan, dan strategi kelompok.",
       to: "/swot",
       icon: "📊",
-      accent: "from-violet-500 to-indigo-500",
+      accent: "from-blue-600 to-indigo-500",
     },
   ];
 
@@ -87,7 +87,7 @@ function Home() {
           <Link
             key={item.title}
             to={item.to}
-            className="angled-panel group p-4 text-white transition-all duration-300 hover:-translate-y-2 hover:border-cyan-200/50 hover:shadow-2xl hover:shadow-cyan-950/40"
+            className="group overflow-hidden rounded-xl border border-blue-300/20 bg-slate-900/80 p-4 text-white shadow-xl shadow-blue-950/30 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:border-cyan-200/50 hover:shadow-2xl hover:shadow-cyan-950/40"
           >
             <div
               className={`angled-frame relative mb-4 flex h-28 items-center justify-center overflow-hidden bg-linear-to-br ${item.accent} shadow-xl shadow-blue-950/30`}
@@ -98,7 +98,7 @@ function Home() {
               </span>
             </div>
 
-            <div className="angled-nameplate px-5 py-3 shadow-lg shadow-cyan-950/30">
+            <div className="rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-3 shadow-lg shadow-cyan-950/30">
               <h2 className="text-sm font-extrabold uppercase tracking-wide text-white">
                 {item.title}
               </h2>

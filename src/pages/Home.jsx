@@ -28,7 +28,7 @@ function Home() {
 
   return (
     <div className="space-y-12 animate-fade-in">
-      <section className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-slate-900/80 text-white shadow-2xl shadow-blue-950/60 backdrop-blur">
+      <section className="group relative overflow-hidden rounded-4xl border border-white/10 bg-slate-900/80 text-white shadow-2xl shadow-blue-950/60 backdrop-blur">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,_rgba(96,165,250,0.45),_transparent_30%),radial-gradient(circle_at_85%_70%,_rgba(34,211,238,0.28),_transparent_28%),linear-gradient(135deg,_rgba(30,64,175,0.92),_rgba(15,23,42,0.98)_52%,_rgba(8,47,73,0.95))]" />
         <div className="absolute left-0 top-0 h-full w-1/2 bg-[linear-gradient(115deg,_rgba(255,255,255,0.18),_transparent_38%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
@@ -39,7 +39,7 @@ function Home() {
               LKM Informatika 2026
             </div>
 
-            <h1 className="mb-6 text-4xl font-extrabold leading-tight md:text-6xl">
+            <h1 className="mb-6 text-4xl font-extrabold leading-tight md:text-5xl lg:text-6xl">
               Kelompok 18
               <span className="block text-cyan-200">LKM Informatika 2026</span>
             </h1>
@@ -49,24 +49,11 @@ function Home() {
               materi LKM, dan analisis SWOT kelompok.
             </p>
 
-            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
-              <Link
-                to="/anggota"
-                className="rounded-xl bg-white px-7 py-3 font-bold text-blue-700 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-cyan-50 hover:shadow-cyan-500/30"
-              >
-                Lihat Anggota
-              </Link>
-              <Link
-                to="/materi"
-                className="rounded-xl border border-white/40 bg-white/10 px-7 py-3 font-bold text-white backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:bg-white/20"
-              >
-                Buka Materi
-              </Link>
-            </div>
+            <div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start"></div>
           </div>
 
           <div className="relative mx-auto w-full max-w-md">
-            <div className="absolute -inset-4 rounded-[2rem] bg-cyan-300/20 blur-2xl"></div>
+            <div className="absolute -inset-4 rounded-4xl bg-cyan-300/20 blur-2xl"></div>
             <div className="angled-panel relative p-5 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-200/50">
               <div className="angled-frame flex h-72 items-center justify-center bg-slate-950/60 p-8 shadow-xl">
                 <img
@@ -103,7 +90,7 @@ function Home() {
             className="angled-panel group p-4 text-white transition-all duration-300 hover:-translate-y-2 hover:border-cyan-200/50 hover:shadow-2xl hover:shadow-cyan-950/40"
           >
             <div
-              className={`angled-frame relative mb-4 flex h-28 items-center justify-center overflow-hidden bg-gradient-to-br ${item.accent} shadow-xl shadow-blue-950/30`}
+              className={`angled-frame relative mb-4 flex h-28 items-center justify-center overflow-hidden bg-linear-to-br ${item.accent} shadow-xl shadow-blue-950/30`}
             >
               <div className="absolute inset-0 bg-slate-950/25"></div>
               <span className="relative text-4xl transition-transform duration-500 group-hover:scale-125">

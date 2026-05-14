@@ -43,24 +43,22 @@ function MaterialDetail() {
           <h2 className="mt-3 text-3xl font-extrabold leading-tight md:text-5xl">
             {material.title}
           </h2>
-          <p className="mt-5 text-base leading-relaxed text-slate-600 md:text-lg">
+          <p className="mt-5 text-justify text-base leading-relaxed text-slate-600 md:text-lg">
             {material.desc}
           </p>
 
-          <section className="mt-8 rounded-2xl bg-slate-50 p-5 ring-1 ring-slate-200 md:p-6">
+          <section className="mt-8 rounded-2xl bg-white p-5 ring-1 ring-slate-200 md:p-6">
             <h3 className="text-xl font-extrabold text-slate-900">
-              Isi Materi
+              Deskripsi Materi
             </h3>
-            <div className="mt-5 space-y-4">
-              {material.points.map((point, index) => (
-                <div key={point} className="flex gap-4">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-blue-600 text-sm font-extrabold text-white">
-                    {index + 1}
-                  </span>
-                  <p className="pt-1 text-sm leading-relaxed text-slate-700 md:text-base">
-                    {point}
-                  </p>
-                </div>
+            <div className="mt-4 space-y-4">
+              {material.description.map((paragraph) => (
+                <p
+                  key={paragraph}
+                  className="text-justify text-sm leading-relaxed text-slate-700 md:text-base"
+                >
+                  {paragraph}
+                </p>
               ))}
             </div>
           </section>

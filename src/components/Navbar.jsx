@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import logoHimpunan from "../assets/logo himpunan.jpg";
+import logoLkm from "../assets/Logo LKM IF2.png";
 
 const navItems = [
   { label: "Home", to: "/" },
@@ -27,11 +27,11 @@ const Navbar = () => {
           className="group flex items-center gap-3"
           onClick={() => setIsOpen(false)}
         >
-          <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-2xl bg-white shadow-lg shadow-cyan-500/20 ring-1 ring-white/30 transition-transform duration-300 group-hover:rotate-3 group-hover:scale-105">
+          <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full bg-white shadow-lg shadow-cyan-500/20 ring-1 ring-white/30 transition-transform duration-300 group-hover:rotate-3 group-hover:scale-105">
             <img
-              src={logoHimpunan}
-              alt="Logo Himpunan"
-              className="h-full w-full object-cover"
+              src={logoLkm}
+              alt="Logo LKM Informatika 2026"
+              className="h-full w-full object-contain"
             />
           </div>
           <div className="leading-tight">

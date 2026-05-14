@@ -11,7 +11,7 @@ function Materials() {
         <h2 className="text-4xl font-extrabold leading-tight md:text-5xl">
           Materi LKM Informatika 2026
         </h2>
-        <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-300 md:text-base">
+        <p className="mx-auto mt-4 max-w-2xl text-justify text-sm leading-relaxed text-slate-300 md:text-base">
           Ringkasan materi beserta poin penting yang dikembangkan oleh tim.
         </p>
       </section>
@@ -40,7 +40,7 @@ function Materials() {
                   <h3 className="text-2xl font-extrabold leading-tight text-white transition-colors duration-300 group-hover:text-cyan-100">
                     {mat.title}
                   </h3>
-                  <p className="max-w-2xl text-sm leading-relaxed text-slate-300 md:text-left">
+                  <p className="max-w-2xl text-justify text-sm leading-relaxed text-slate-300">
                     {mat.desc}
                   </p>
                 </div>
@@ -48,24 +48,8 @@ function Materials() {
 
               <div className="mt-6 border-t border-white/10 pt-5">
                 <div className="flex items-center justify-between gap-4 text-sm font-semibold text-cyan-200">
-                  <span>Isi Materi</span>
+                  <span>Lihat Deskripsi</span>
                   <span className="transition-transform duration-300 group-hover:translate-x-1">Buka</span>
-                </div>
-
-                <div className="mt-4 space-y-3">
-                  {mat.points.map((point, index) => (
-                    <div
-                      key={point}
-                      className="rounded-3xl border border-white/10 bg-slate-900/80 px-4 py-4 text-sm leading-relaxed text-slate-200 shadow-sm transition-all duration-300 hover:border-cyan-300/20 hover:bg-slate-900/95"
-                    >
-                      <div className="flex items-start gap-3">
-                        <span className="flex h-8 w-8 items-center justify-center rounded-2xl bg-cyan-500 text-sm font-bold text-slate-950">
-                          {String(index + 1).padStart(2, "0")}
-                        </span>
-                        <p>{point}</p>
-                      </div>
-                    </div>
-                  ))}
                 </div>
               </div>
             </div>

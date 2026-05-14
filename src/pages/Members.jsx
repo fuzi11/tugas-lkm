@@ -99,35 +99,37 @@ function Members() {
         Profil Anggota Tim
       </h2>
 
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {members.map((member) => (
           <div
             key={member.id}
-            className="group relative w-full overflow-hidden rounded-2xl border border-white/10 bg-white/10 text-white shadow-md shadow-blue-950/30 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:border-cyan-200/40 hover:bg-white/15 hover:shadow-2xl hover:shadow-cyan-950/40 md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.34rem)]"
+            className="angled-panel group text-white transition-all duration-300 hover:-translate-y-2 hover:border-cyan-200/50 hover:shadow-2xl hover:shadow-cyan-950/40"
           >
-            <div className="relative h-28 overflow-hidden bg-gradient-to-r from-blue-500 to-cyan-500">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,_rgba(255,255,255,0.45),_transparent_28%),linear-gradient(135deg,_rgba(37,99,235,0.92),_rgba(15,23,42,0.15),_rgba(34,211,238,0.62))]"></div>
-            </div>
-
-            <div className="relative z-10 -mt-14 flex justify-center">
+            <div className="angled-frame relative mx-4 mt-4 h-64 overflow-hidden border border-cyan-200/20 bg-slate-900 shadow-xl shadow-blue-950/40">
               {member.img ? (
-                <div className="h-28 w-28 overflow-hidden rounded-full border-4 border-slate-950/80 bg-white shadow-xl shadow-blue-950/40 transition-transform duration-300 group-hover:scale-110">
-                  <img
-                    src={member.img}
-                    alt={member.name}
-                    className="h-full w-full scale-125 object-cover object-top"
-                  />
-                </div>
+                <img
+                  src={member.img}
+                  alt={member.name}
+                  className="h-full w-full scale-110 object-cover object-top transition-transform duration-500 group-hover:scale-125"
+                />
               ) : (
-                <div className="flex h-28 w-28 items-center justify-center rounded-full border-4 border-slate-950/80 bg-slate-900 text-3xl font-extrabold text-cyan-200 shadow-xl shadow-blue-950/40 transition-transform duration-300 group-hover:scale-110">
+                <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_50%_20%,_rgba(34,211,238,0.28),_transparent_34%),linear-gradient(135deg,_rgba(15,23,42,1),_rgba(8,47,73,0.9))] text-5xl font-extrabold text-cyan-200 transition-transform duration-500 group-hover:scale-110">
                   {getInitials(member.name)}
                 </div>
               )}
             </div>
 
-            <div className="relative z-10 p-6 pt-5 text-center">
-              <h3 className="text-2xl font-bold text-white">{member.name}</h3>
-              <p className="mb-4 mt-1 font-semibold text-cyan-200">
+            <div className="relative z-10 px-4 pb-5 pt-4">
+              <div className="angled-nameplate px-5 py-3 shadow-lg shadow-cyan-950/30">
+                <h3 className="text-sm font-extrabold uppercase leading-tight tracking-wide text-white">
+                  {member.name}
+                </h3>
+                <p className="mt-1 text-xs font-semibold text-cyan-50">
+                  Anggota Kelompok 18
+                </p>
+              </div>
+
+              <p className="mt-4 font-semibold text-cyan-200">
                 NPM: {member.npm}
               </p>
               {member.linkedin ? (
@@ -135,12 +137,12 @@ function Members() {
                   href={member.linkedin}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-200 hover:text-slate-950"
+                  className="mt-4 inline-flex items-center justify-center rounded-full border border-cyan-200/40 px-4 py-2 text-sm font-semibold text-cyan-100 transition-colors hover:bg-cyan-200 hover:text-slate-950"
                 >
                   LinkedIn
                 </a>
               ) : (
-                <span className="inline-flex items-center justify-center rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-slate-400">
+                <span className="mt-4 inline-flex items-center justify-center rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-slate-400">
                   LinkedIn belum tersedia
                 </span>
               )}

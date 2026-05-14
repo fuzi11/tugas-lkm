@@ -67,8 +67,8 @@ function Home() {
 
           <div className="relative mx-auto w-full max-w-md">
             <div className="absolute -inset-4 rounded-[2rem] bg-cyan-300/20 blur-2xl"></div>
-            <div className="relative overflow-hidden rounded-[1.5rem] border border-white/20 bg-white/10 p-5 shadow-2xl shadow-cyan-950/50 backdrop-blur transition-all duration-500 hover:-translate-y-2 hover:border-cyan-200/50 hover:bg-white/15">
-              <div className="flex h-72 items-center justify-center rounded-2xl bg-slate-950/60 p-8 shadow-xl">
+            <div className="angled-panel relative p-5 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-200/50">
+              <div className="angled-frame flex h-72 items-center justify-center bg-slate-950/60 p-8 shadow-xl">
                 <img
                   src={logoLkm}
                   alt="Logo LKM Informatika 2026"
@@ -77,15 +77,15 @@ function Home() {
               </div>
 
               <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-                <div className="rounded-xl bg-white/10 p-3">
+                <div className="angled-soft border border-white/10 bg-white/10 p-3">
                   <p className="text-2xl font-extrabold">18</p>
                   <p className="text-xs text-slate-300">Kelompok</p>
                 </div>
-                <div className="rounded-xl bg-white/10 p-3">
+                <div className="angled-soft border border-white/10 bg-white/10 p-3">
                   <p className="text-2xl font-extrabold">11</p>
                   <p className="text-xs text-slate-300">Anggota</p>
                 </div>
-                <div className="rounded-xl bg-white/10 p-3">
+                <div className="angled-soft border border-white/10 bg-white/10 p-3">
                   <p className="text-2xl font-extrabold">3</p>
                   <p className="text-xs text-slate-300">Menu</p>
                 </div>
@@ -95,28 +95,32 @@ function Home() {
         </div>
       </section>
 
-      <section className="grid gap-5 md:grid-cols-3">
+      <section className="grid gap-6 md:grid-cols-3">
         {menuItems.map((item) => (
           <Link
             key={item.title}
             to={item.to}
-            className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/10 p-6 text-white shadow-md shadow-blue-950/30 backdrop-blur transition-all duration-300 hover:-translate-y-2 hover:border-cyan-200/40 hover:bg-white/15 hover:shadow-2xl hover:shadow-cyan-950/40"
+            className="angled-panel group p-4 text-white transition-all duration-300 hover:-translate-y-2 hover:border-cyan-200/50 hover:shadow-2xl hover:shadow-cyan-950/40"
           >
             <div
-              className={`absolute inset-x-0 top-0 h-1 bg-gradient-to-r ${item.accent}`}
-            ></div>
-            <div
-              className={`mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br ${item.accent} text-2xl shadow-lg transition-transform duration-300 group-hover:rotate-6 group-hover:scale-110`}
+              className={`angled-frame relative mb-4 flex h-28 items-center justify-center overflow-hidden bg-gradient-to-br ${item.accent} shadow-xl shadow-blue-950/30`}
             >
-              {item.icon}
+              <div className="absolute inset-0 bg-slate-950/25"></div>
+              <span className="relative text-4xl transition-transform duration-500 group-hover:scale-125">
+                {item.icon}
+              </span>
             </div>
-            <h2 className="mb-2 text-xl font-extrabold text-white">
-              {item.title}
-            </h2>
-            <p className="mb-5 text-sm leading-relaxed text-slate-300">
+
+            <div className="angled-nameplate px-5 py-3 shadow-lg shadow-cyan-950/30">
+              <h2 className="text-sm font-extrabold uppercase tracking-wide text-white">
+                {item.title}
+              </h2>
+            </div>
+
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
               {item.desc}
             </p>
-            <span className="font-semibold text-cyan-200 transition-all duration-300 group-hover:ml-2 group-hover:text-white">
+            <span className="mt-5 inline-flex font-semibold text-cyan-200 transition-all duration-300 group-hover:translate-x-1 group-hover:text-white">
               Buka halaman →
             </span>
           </Link>

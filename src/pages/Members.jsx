@@ -2,6 +2,7 @@ import faza from "../assets/faza.jpg";
 import danar from "../assets/Danar.jpg";
 import fariz from "../assets/fariz.jpeg";
 import viola from "../assets/viola.JPG";
+import fauzi from "../assets/fauzi.png";
 
 function Members() {
   const members = [
@@ -65,9 +66,9 @@ function Members() {
     {
       id: 9,
       name: "Fauzi Firmansyah",
-      npm: "0000000009",
-      linkedin: "",
-      img: "",
+      npm: "257006111109",
+      linkedin: "https://id.linkedin.com/in/fauzi-firmansyah-2918392b5?trk=people-guest_people_search-card",
+      img: fauzi,
     },
     {
       id: 10,

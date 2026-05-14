@@ -12,7 +12,7 @@ function Materials() {
           Materi LKM Informatika 2026
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-justify text-sm leading-relaxed text-slate-300 md:text-base">
-          Ringkasan materi beserta poin penting yang dikembangkan oleh tim.
+          Ringkasan materi yang dikembangkan dari bahan LKM Informatika 2026.
         </p>
       </section>
 
@@ -23,7 +23,7 @@ function Materials() {
             to={`/materi/${mat.id}`}
             className="group relative overflow-hidden rounded-3xl border border-white/10 bg-slate-950/85 shadow-2xl shadow-blue-950/40 transition-all duration-300 hover:-translate-y-2 hover:border-cyan-200/40 hover:shadow-cyan-950/40"
           >
-            <div className="relative h-28 overflow-hidden bg-gradient-to-r from-blue-500 to-cyan-500">
+            <div className={`relative h-28 overflow-hidden bg-gradient-to-r ${mat.color}`}>
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_20%,_rgba(255,255,255,0.35),_transparent_28%),linear-gradient(135deg,_rgba(15,23,42,0.75),_rgba(255,255,255,0.08),_transparent)]" />
             </div>
 
@@ -49,7 +49,9 @@ function Materials() {
               <div className="mt-6 border-t border-white/10 pt-5">
                 <div className="flex items-center justify-between gap-4 text-sm font-semibold text-cyan-200">
                   <span>Lihat Deskripsi</span>
-                  <span className="transition-transform duration-300 group-hover:translate-x-1">Buka</span>
+                  <span className="transition-transform duration-300 group-hover:translate-x-1">
+                    Buka
+                  </span>
                 </div>
               </div>
             </div>

@@ -58,7 +58,7 @@ const Navbar = () => {
           className="inline-flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/10 text-xl font-bold text-white shadow-sm transition-all duration-300 hover:bg-white/20 hover:text-cyan-200 md:hidden"
           aria-label="Toggle navigation"
         >
-          {isOpen ? "×" : "☰"}
+          {isOpen ? "x" : "☰"}
         </button>
       </div>
 

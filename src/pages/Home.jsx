@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import hero from "../assets/hero.png";
+import logoLkm from "../assets/Logo LKM IF2.png";
 
 function Home() {
   const menuItems = [
@@ -41,10 +41,12 @@ function Home() {
 
             <h1 className="mb-6 text-4xl font-extrabold leading-tight md:text-6xl">
               Kelompok 18
-              <span className="block text-cyan-200"></span>
+              <span className="block text-cyan-200">LKM Informatika 2026</span>
             </h1>
 
             <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-slate-200 md:mx-0 md:text-lg">
+              Website kelompok untuk menampilkan profil anggota, rangkuman
+              materi LKM, dan analisis SWOT kelompok.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
@@ -55,10 +57,10 @@ function Home() {
                 Lihat Anggota
               </Link>
               <Link
-                to="/swot"
+                to="/materi"
                 className="rounded-xl border border-white/40 bg-white/10 px-7 py-3 font-bold text-white backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:bg-white/20"
               >
-                Buka SWOT
+                Buka Materi
               </Link>
             </div>
           </div>
@@ -66,11 +68,13 @@ function Home() {
           <div className="relative mx-auto w-full max-w-md">
             <div className="absolute -inset-4 rounded-[2rem] bg-cyan-300/20 blur-2xl"></div>
             <div className="relative overflow-hidden rounded-[1.5rem] border border-white/20 bg-white/10 p-5 shadow-2xl shadow-cyan-950/50 backdrop-blur transition-all duration-500 hover:-translate-y-2 hover:border-cyan-200/50 hover:bg-white/15">
-              <img
-                src={hero}
-                alt="Ilustrasi LKM Informatika"
-                className="h-72 w-full rounded-2xl object-cover shadow-xl transition-transform duration-500 hover:scale-105"
-              />
+              <div className="flex h-72 items-center justify-center rounded-2xl bg-slate-950/60 p-8 shadow-xl">
+                <img
+                  src={logoLkm}
+                  alt="Logo LKM Informatika 2026"
+                  className="h-full w-full object-contain"
+                />
+              </div>
 
               <div className="mt-5 grid grid-cols-3 gap-3 text-center">
                 <div className="rounded-xl bg-white/10 p-3">
@@ -118,7 +122,6 @@ function Home() {
           </Link>
         ))}
       </section>
-
     </div>
   );
 }

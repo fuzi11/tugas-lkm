@@ -29,10 +29,10 @@ function Home() {
   return (
     <div className="space-y-12 animate-fade-in">
       <section className="group relative overflow-hidden rounded-4xl border border-white/10 bg-slate-900/80 text-white shadow-2xl shadow-blue-950/60 backdrop-blur">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,_rgba(96,165,250,0.45),_transparent_30%),radial-gradient(circle_at_85%_70%,_rgba(34,211,238,0.28),_transparent_28%),linear-gradient(135deg,_rgba(30,64,175,0.92),_rgba(15,23,42,0.98)_52%,_rgba(8,47,73,0.95))]" />
-        <div className="absolute left-0 top-0 h-full w-1/2 bg-[linear-gradient(115deg,_rgba(255,255,255,0.18),_transparent_38%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(96,165,250,0.45),transparent_30%),radial-gradient(circle_at_85%_70%,rgba(34,211,238,0.28),transparent_28%),linear-gradient(135deg,rgba(30,64,175,0.92),rgba(15,23,42,0.98)_52%,rgba(8,47,73,0.95))]" />
+        <div className="absolute left-0 top-0 h-full w-1/2 bg-[linear-gradient(115deg,rgba(255,255,255,0.18),transparent_38%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100"></div>
 
-        <div className="relative grid min-h-[520px] items-center gap-10 px-6 py-14 md:grid-cols-[1.05fr_0.95fr] md:px-12 lg:px-16">
+        <div className="relative grid min-h-130 items-center gap-10 px-6 py-14 md:grid-cols-[1.05fr_0.95fr] md:px-12 lg:px-16">
           <div className="text-center md:text-left">
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-semibold text-cyan-100 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-cyan-300 shadow-[0_0_18px_rgba(103,232,249,0.9)]"></span>
@@ -98,7 +98,7 @@ function Home() {
               </span>
             </div>
 
-            <div className="rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 px-5 py-3 shadow-lg shadow-cyan-950/30">
+            <div className="rounded-lg bg-linear-to-r from-blue-600 to-cyan-500 px-5 py-3 shadow-lg shadow-cyan-950/30">
               <h2 className="text-sm font-extrabold uppercase tracking-wide text-white">
                 {item.title}
               </h2>

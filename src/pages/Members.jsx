@@ -67,7 +67,8 @@ function Members() {
       id: 9,
       name: "Fauzi Firmansyah",
       npm: "257006111109",
-      linkedin: "https://id.linkedin.com/in/fauzi-firmansyah-2918392b5?trk=people-guest_people_search-card",
+      linkedin:
+        "https://id.linkedin.com/in/fauzi-firmansyah-2918392b5?trk=people-guest_people_search-card",
       img: fauzi,
     },
     {
@@ -124,7 +125,7 @@ function Members() {
                     className="h-full w-full scale-110 object-cover object-top transition-transform duration-500 group-hover:scale-125"
                   />
                 ) : (
-                  <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_50%_20%,_rgba(34,211,238,0.28),_transparent_34%),linear-gradient(135deg,_rgba(15,23,42,1),_rgba(8,47,73,0.9))] text-5xl font-extrabold text-cyan-200 transition-transform duration-500 group-hover:scale-110">
+                  <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_50%_20%,rgba(34,211,238,0.28),transparent_34%),linear-gradient(135deg,rgba(15,23,42,1),rgba(8,47,73,0.9))] text-5xl font-extrabold text-cyan-200 transition-transform duration-500 group-hover:scale-110">
                     {getInitials(member.name)}
                   </div>
                 )}

@@ -3,6 +3,8 @@ import danar from "../assets/Danar.jpg";
 import fariz from "../assets/fariz.jpeg";
 import viola from "../assets/viola.JPG";
 import fauzi from "../assets/fauzi.png";
+import desvitasari from "../assets/Desvitasari.jpg";
+import taufik from "../assets/Taufik Sabillah.jpg";
 
 function Members() {
   const members = [
@@ -33,7 +35,7 @@ function Members() {
       name: "Desvitasari",
       npm: "0000000004",
       linkedin: "",
-      img: "",
+      img: desvitasari,
     },
     {
       id: 5,
@@ -47,7 +49,7 @@ function Members() {
       name: "Taufik Sabillah",
       npm: "0000000006",
       linkedin: "",
-      img: "",
+      img: taufik,
     },
     {
       id: 7,
@@ -94,6 +96,13 @@ function Members() {
       .map((word) => word[0])
       .join("");
 
+  const getPhotoPosition = (name) =>
+    name === "Desvitasari" ||
+    name === "Viola Diva Ananda" ||
+    name === "Fariz Alwasi"
+      ? "object-[center_8%]"
+      : "object-[center_25%]";
+
   return (
     <div className="mx-auto max-w-6xl">
       <h2 className="mb-12 text-center text-3xl font-extrabold text-white">
@@ -121,7 +130,9 @@ function Members() {
                   <img
                     src={member.img}
                     alt={member.name}
-                    className="h-full w-full scale-110 object-cover object-top transition-transform duration-500 group-hover:scale-125"
+                    className={`h-full w-full scale-105 object-cover ${getPhotoPosition(
+                      member.name
+                    )} transition-transform duration-500 group-hover:scale-115`}
                   />
                 ) : (
                   <div className="flex h-full w-full items-center justify-center bg-[radial-gradient(circle_at_50%_20%,_rgba(34,211,238,0.28),_transparent_34%),linear-gradient(135deg,_rgba(15,23,42,1),_rgba(8,47,73,0.9))] text-5xl font-extrabold text-cyan-200 transition-transform duration-500 group-hover:scale-110">

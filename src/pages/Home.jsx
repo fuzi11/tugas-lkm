@@ -45,8 +45,6 @@ function Home() {
             </h1>
 
             <p className="mx-auto mb-8 max-w-2xl text-base leading-relaxed text-slate-200 md:mx-0 md:text-lg">
-              Website kelompok untuk menampilkan profil anggota, rangkuman
-              materi LKM, dan analisis SWOT kelompok.
             </p>
 
             <div className="flex flex-col gap-3 sm:flex-row sm:justify-center md:justify-start">
@@ -67,28 +65,13 @@ function Home() {
 
           <div className="relative mx-auto w-full max-w-md">
             <div className="absolute -inset-4 rounded-[2rem] bg-cyan-300/20 blur-2xl"></div>
-            <div className="angled-panel relative p-5 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-200/50">
-              <div className="angled-frame flex h-72 items-center justify-center bg-slate-950/60 p-8 shadow-xl">
+            <div className="relative rounded-xl border border-white/10 bg-slate-950/40 p-5 shadow-xl shadow-blue-950/40 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-200/50">
+              <div className="flex h-72 items-center justify-center rounded-lg bg-slate-950/60 p-8 shadow-xl">
                 <img
                   src={logoLkm}
                   alt="Logo LKM Informatika 2026"
                   className="h-full w-full object-contain"
                 />
-              </div>
-
-              <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-                <div className="angled-soft border border-white/10 bg-white/10 p-3">
-                  <p className="text-2xl font-extrabold">18</p>
-                  <p className="text-xs text-slate-300">Kelompok</p>
-                </div>
-                <div className="angled-soft border border-white/10 bg-white/10 p-3">
-                  <p className="text-2xl font-extrabold">11</p>
-                  <p className="text-xs text-slate-300">Anggota</p>
-                </div>
-                <div className="angled-soft border border-white/10 bg-white/10 p-3">
-                  <p className="text-2xl font-extrabold">3</p>
-                  <p className="text-xs text-slate-300">Menu</p>
-                </div>
               </div>
             </div>
           </div>

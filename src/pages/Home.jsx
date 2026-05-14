@@ -51,15 +51,9 @@ function Home() {
           </div>
 
           <div className="relative mx-auto w-full max-w-md">
-<<<<<<< HEAD
             <div className="absolute -inset-4 rounded-[2rem] bg-cyan-300/20 blur-2xl"></div>
             <div className="relative rounded-xl border border-white/10 bg-slate-950/40 p-5 shadow-xl shadow-blue-950/40 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-200/50">
               <div className="flex h-72 items-center justify-center rounded-lg bg-slate-950/60 p-8 shadow-xl">
-=======
-            <div className="absolute -inset-4 rounded-4xl bg-cyan-300/20 blur-2xl"></div>
-            <div className="angled-panel relative p-5 transition-all duration-500 hover:-translate-y-2 hover:border-cyan-200/50">
-              <div className="angled-frame flex h-72 items-center justify-center bg-slate-950/60 p-8 shadow-xl">
->>>>>>> bda05c09fdcdd16121f10fbe7bf1583a526a3b08
                 <img
                   src={logoLkm}
                   alt="Logo LKM Informatika 2026"

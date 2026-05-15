@@ -5,6 +5,8 @@ import viola from "../assets/viola.JPG";
 import fauzi from "../assets/fauzi.png";
 import desvitasari from "../assets/Desvitasari.jpg";
 import taufik from "../assets/Taufik Sabillah.jpg";
+import ikhsan from "../assets/ikhsan.jpg";
+
 
 function Members() {
   const members = [
@@ -39,10 +41,10 @@ function Members() {
     },
     {
       id: 5,
-      name: "Muhammad Ikhsan Al Rizal",
-      npm: "0000000005",
-      linkedin: "",
-      img: "",
+      name: "Muhammad Ikhsan Alrizal",
+      npm: "257006111086",
+      linkedin: "https://www.linkedin.com/in/ikhsan-alrizal-445a67405",
+      img: ikhsan,
     },
     {
       id: 6,

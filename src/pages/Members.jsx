@@ -17,7 +17,7 @@ function Members() {
       id: 1,
       name: "Muhammad Nibras Zahran Irawan",
       npm: "257006111187",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/nibras-zahran-787bb5405?trk=contact-info",
       img: nibras,
     },
     {

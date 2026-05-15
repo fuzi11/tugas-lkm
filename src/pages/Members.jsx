@@ -6,6 +6,9 @@ import fauzi from "../assets/fauzi.png";
 import desvitasari from "../assets/Desvitasari.jpg";
 import taufik from "../assets/Taufik Sabillah.jpg";
 import ikhsan from "../assets/ikhsan.jpg";
+import ilham from "../assets/ilham.jpeg";
+import nibras from "../assets/nibras.jpg";
+import nazu from "../assets/nazu.jpeg";
 
 
 function Members() {
@@ -13,16 +16,16 @@ function Members() {
     {
       id: 1,
       name: "Muhammad Nibras Zahran Irawan",
-      npm: "0000000001",
+      npm: "257006111187",
       linkedin: "",
-      img: "",
+      img: nibras,
     },
     {
       id: 2,
       name: "Nazwa Nurul Aulia",
-      npm: "0000000002",
-      linkedin: "",
-      img: "",
+      npm: "257006111094",
+      linkedin: "https://www.linkedin.com/in/nazwa-nurul-aulia-07857937b?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      img: nazu,
     },
     {
       id: 3,
@@ -35,8 +38,8 @@ function Members() {
     {
       id: 4,
       name: "Desvitasari",
-      npm: "0000000004",
-      linkedin: "",
+      npm: "257006111148",
+      linkedin: "https://www.linkedin.com/in/desvitasari-42b8a6405?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       img: desvitasari,
     },
     {
@@ -49,22 +52,22 @@ function Members() {
     {
       id: 6,
       name: "Taufik Sabillah",
-      npm: "0000000006",
-      linkedin: "",
+      npm: "257006111221",
+      linkedin: "https://www.linkedin.com/in/taufik-sabillah?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       img: taufik,
     },
     {
       id: 7,
       name: "Ilham Syarif Hidayat",
-      npm: "0000000007",
-      linkedin: "",
-      img: "",
+      npm: "257006111187",
+      linkedin: "https://www.linkedin.com/in/ilham-syarif-hidayat-34bba7405",
+      img: ilham,
     },
     {
       id: 8,
       name: "Viola Diva Ananda",
-      npm: "0000000008",
-      linkedin: "",
+      npm: "257006111037",
+      linkedin: "https://www.linkedin.com/in/viola-diva-8801b538b?utm_source=share_via&utm_content=profile&utm_medium=member_ios",
       img: viola,
     },
     {
@@ -78,8 +81,8 @@ function Members() {
     {
       id: 10,
       name: "Danar Yusuf Gantika Putra",
-      npm: "0000000010",
-      linkedin: "",
+      npm: "257006111190",
+      linkedin: "https://www.linkedin.com/in/danar-yusuf-5647443ab?utm_source=share_via&utm_content=profile&utm_medium=member_android",
       img: danar,
     },
     {
